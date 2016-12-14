@@ -3,15 +3,14 @@
 import re
 import base64
 import cv2
-import logging
 import imutils
 from urllib.request import urlopen, Request
 import numpy as np
 
 # mjpg-streamer URL information
-piip = ''
-vPort0 = '2500'
-username = ''
+piip = ''  #input your pi's streamer ip
+vPort0 = ''  #input port number you setup
+username = ''  #if you encrypted your streamer server, input your username and password here.
 password = ''
 v0url = 'http://' + piip + ':' + vPort0 + '/?action=stream'
 # Add user/pass to header
